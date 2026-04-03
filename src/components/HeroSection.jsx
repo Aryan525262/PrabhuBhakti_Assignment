@@ -29,8 +29,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="w-full px-6 md:px-16 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+    <section className="w-full px-6 md:px-16 py-12 md:py-20 mt-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-start gap-6 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
@@ -56,7 +56,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] relative">
+        <div className="w-full md:flex-1 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] relative">
           {heroData.image && (
             <Image
               src={heroData.image}
